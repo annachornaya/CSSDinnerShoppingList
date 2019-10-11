@@ -1,0 +1,140 @@
+body {
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #4a4f55;
+  color: #eb7e7f;
+  text-align: center;
+  padding: 15px 0px;
+}
+
+header h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+article {
+  background-color: #3b3f45;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* text-align: center; */
+  font-size: 20px;
+  padding: 30px;
+}
+
+article form {
+  width: 600px;
+}
+
+label span {
+  font-size: 13px;
+}
+
+ul li {
+  text-align: left;
+  padding: 15px 0 15px 20px;
+}
+
+ul li:nth-child(even) {
+  background-color: #7a7593;
+}
+
+ul li:nth-child(odd) {
+  background-color: #88839e;
+}
+
+ul li:hover {
+  background-color: #625e77;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+ul li:active {
+  background-color: #eb7e7f;
+}
+/* input[type="checkbox"] {
+    display: none;
+}
+
+label:before {
+    content: " ";
+    color: #000;
+    display: inline-block;
+    font: 20px/30px Arial;
+    margin-right: 15px;
+    position: relative;
+    text-align: center;
+    text-indent: 0px;
+    width: 20px;
+    height: 20px;
+    background: #FFF;
+    border: 1px solid #e3e3e3;
+    border-image: initial;
+    vertical-align: middle;
+} */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  color: #fff;
+  cursor: default;
+  font-weight: normal;
+  /* padding: 10px 0; */
+  vertical-align: middle;
+}
+
+label:before {
+  content: " ";
+  color: #000;
+  display: inline-block;
+  margin-right: 15px;
+  position: relative;
+  text-align: center;
+  text-indent: 0px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  /* border-image: initial; */
+  vertical-align: middle;
+}
+
+input:checked + label:before {
+  content: "\2714";
+  transition: all 0.3s;
+}
+
+input:disabled + label:before {
+  background: #eee;
+  color: #aaa;
+}
+
+input,
+label {
+  cursor: pointer;
+}
+
+input:checked + label {
+  text-decoration: line-through;
+  color: #b1b1b1;
+}
+
+footer {
+  color: #eb7e7f;
+  background-color: #4a4f55;
+  text-align: center;
+}
+
+.footer {
+  background-color: #fff;
+  width: 600px;
+}
+
+h2 {
+  font-size: 20px;
+}
